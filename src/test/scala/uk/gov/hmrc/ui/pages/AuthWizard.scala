@@ -26,20 +26,20 @@ object AuthWizard extends BasePage {
 
   val url: String = s"${Env.baseUrl}/auth-login-stub/gg-sign-in"
 
-  val redirectUrl: By = By.id("redirectionUrl")
-  val affinityGroup: By = By.id("affinityGroupSelect")
+  val redirectUrl: By     = By.id("redirectionUrl")
+  val affinityGroup: By   = By.id("affinityGroupSelect")
   val confidenceLevel: By = By.id("confidenceLevel")
-  val nino: By = By.id("nino")
-  val enrolmentKey: By = By.id(s"enrolment[0].name") // Enrolment Key
-  val enrolmentId: By = By.name(s"enrolment[0].taxIdentifier[0].name") // Identifier Name
-  val enrolmentValue: By = By.name(s"enrolment[0].taxIdentifier[0].value") // Identifier Value
-  val enrolmentId2: By = By.name(s"enrolment[0].taxIdentifier[1].name")
+  val nino: By            = By.id("nino")
+  val enrolmentKey: By    = By.id(s"enrolment[0].name") // Enrolment Key
+  val enrolmentId: By     = By.name(s"enrolment[0].taxIdentifier[0].name") // Identifier Name
+  val enrolmentValue: By  = By.name(s"enrolment[0].taxIdentifier[0].value") // Identifier Value
+  val enrolmentId2: By    = By.name(s"enrolment[0].taxIdentifier[1].name")
   val enrolmentValue2: By = By.name(s"enrolment[0].taxIdentifier[1].value")
-  val oAuthIdToken: By = By.id("idToken")
-  val addPreset: By = By.id("add-ident-btn-0")
-  val credId: By = By.id("authorityId")
-  val saPreset: By = By.id("presets-dropdown")
-  val btnSubmit: By = By.id("submit")
+  val oAuthIdToken: By    = By.id("idToken")
+  val addPreset: By       = By.id("add-ident-btn-0")
+  val credId: By          = By.id("authorityId")
+  val saPreset: By        = By.id("presets-dropdown")
+  val btnSubmit: By       = By.id("submit")
   val btnAddEnrolment: By = By.id("add-ident-btn-0")
 
   def buildRedirectUrl(loginType: LoginTypes, userType: UserTypes): String = {
