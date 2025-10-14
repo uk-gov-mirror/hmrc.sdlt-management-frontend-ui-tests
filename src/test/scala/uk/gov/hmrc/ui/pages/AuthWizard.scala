@@ -17,6 +17,11 @@
 package uk.gov.hmrc.ui.pages
 
 import org.openqa.selenium.By
+import uk.gov.hmrc.ui.pages.AuthWizard.{click, sendKeys}
+import uk.gov.hmrc.ui.util.Env
+import uk.gov.hmrc.ui.util.Users.LoginTypes.HASDIRECT
+import uk.gov.hmrc.ui.util.Users.UserTypes.Organisation
+import uk.gov.hmrc.ui.util.Users.{LoginTypes, UserTypes}
 
 object AuthWizard extends BasePage {
 
