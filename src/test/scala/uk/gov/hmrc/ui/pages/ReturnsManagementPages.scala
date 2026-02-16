@@ -23,7 +23,7 @@ object InProgressReturnsPage extends BasePage {
   override def pageUrl: String = "/manage-returns/in-progress-returns"
 
   override def pageTitle: String =
-    "Manage returns – Returns in progress - Stamp Taxes Online - GOV.UK"
+    "Returns in progress – Manage returns - Stamp Taxes Online - GOV.UK"
   val startNewReturnLink: By     = By.xpath("//a[starts-with(normalize-space(.), 'Start a new return')]")
 }
 
