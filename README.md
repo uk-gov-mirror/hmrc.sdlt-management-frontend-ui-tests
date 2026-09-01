@@ -2,10 +2,6 @@
 
 # SDLT Management Frontend UI Tests
 
-UI journey tests suite for the [sdlt-management-frontend](**This is the template README. Please update this with project specific content.**
-
-# SDLT Management Frontend UI Tests
-
 UI journey tests suite for the [sdlt-management-frontend](https://github.com/hmrc/sdlt-agent-frontend) using SeleniumWebdriver with ScalaTest.
 
 ## Pre-requisites
@@ -54,6 +50,26 @@ To run the ZAP tests locally, execute the script:
 
 ```bash
 ./run_zap_tests.sh
+```
+
+## Scalafmt
+
+Check all project files are formatted as expected as follows:
+
+```bash
+sbt scalafmtCheckAll scalafmtCheck
+```
+
+Format `*.sbt` and `project/*.scala` files as follows:
+
+```bash
+sbt scalafmtSbt
+```
+
+Format all project files as follows:
+
+```bash
+sbt scalafmtAll
 ```
 
 ## License
