@@ -28,28 +28,7 @@ sm2 --start SDLT_ALL
 To run the UI tests locally, execute the script:
 
 ```bash
-./run-tests.sh <browser> <environment>
-```
-
-### Running tests - Environment
-
-To run the tests against an environment set the corresponding `host` environment property as specified under
-`<env>.host.services` in the [application.conf](/src/test/resources/application.conf).
-
-To run the UI performance smoke tests in staging environment, execute the script:
-
-```bash
-./run-tests.sh chrome staging
-```
-
-### ZAP tests
-
-The `run_zap_tests.sh` script uses [dast-config-manager](https://github.com/hmrc/dast-config-manager) to run ZAP tests locally using the DAST Docker image.
-
-To run the ZAP tests locally, execute the script:
-
-```bash
-./run_zap_tests.sh
+./run_tests_local.sh <browser> <environment>
 ```
 
 ## Scalafmt
